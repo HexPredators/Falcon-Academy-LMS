@@ -1,0 +1,56 @@
+{
+    "name": "falcon-academy-dlms",
+    "version": "2.0.0",
+    "description": "Falcon Academy Digital Learning Management System - Real-time Edition",
+    "main": "backend/server.js",
+    "scripts": {
+      "start": "node backend/server.js",
+      "dev": "nodemon backend/server.js",
+      "production": "NODE_ENV=production node backend/server.js",
+      "setup-db": "node scripts/setup-database.js",
+      "migrate": "node scripts/run-migrations.js",
+      "seed": "node scripts/seed-sample-data.js",
+      "backup": "node scripts/backup-database.js",
+      "build-frontend": "cd frontend && npm run build",
+      "deploy": "npm run build-frontend && npm run production"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "socket.io": "^4.7.2",
+      "mysql2": "^3.6.0",
+      "bcryptjs": "^2.4.3",
+      "jsonwebtoken": "^9.0.2",
+      "cors": "^2.8.5",
+      "dotenv": "^16.3.1",
+      "multer": "^1.4.5",
+      "nodemailer": "^6.9.4",
+      "cloudinary": "^1.40.0",
+      "openai": "^4.0.0",
+      "express-rate-limit": "^6.8.1",
+      "helmet": "^7.0.0",
+      "compression": "^1.7.4",
+      "moment": "^2.29.4",
+      "joi": "^17.9.2",
+      "express-validator": "^7.0.1",
+      "winston": "^3.10.0",
+      "node-cron": "^3.0.2"
+    },
+    "devDependencies": {
+      "nodemon": "^3.0.1"
+    },
+    "engines": {
+      "node": ">=16.0.0",
+      "npm": ">=7.0.0"
+    },
+    "keywords": [
+      "education",
+      "lms",
+      "learning-management",
+      "school",
+      "ethiopia",
+      "real-time",
+      "ai"
+    ],
+    "author": "Falcon Academy",
+    "license": "MIT"
+  }

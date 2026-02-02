@@ -1,0 +1,16 @@
+  {
+    "name": "falcon-academy-dlms",
+    "version": "1.0.0",
+    "description": "Falcon Academy Digital Learning Management System",
+    "scripts": {
+      "start": "node backend/server.js",
+      "dev": "nodemon backend/server.js",
+      "build": "cd frontend && npm run build",
+      "install-all": "npm install && cd frontend && npm install",
+      "deploy-setup": "node deploy/setup.js"
+    },
+    "engines": {
+      "node": ">=16.0.0",
+      "npm": ">=7.0.0"
+    }
+  }
